@@ -1,0 +1,30 @@
+{
+  "name": "giannisrig/homi-addons",
+  "description": "WordPress plugin for addon features for Homi website",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "giannisrig",
+      "email": "giannisrig93@gmail.com"
+    },
+    {
+      "name": "APTO OE",
+      "email": "info@apto.gr"
+    }
+  ],
+  "require": {
+    "wpmetabox/meta-box": "^4.17",
+    "activecampaign/api-php": "1.0.0",
+    "mediatoolkit/activecampaign-v3-php": "^1.1",
+    "phpoffice/phpspreadsheet": "^1.13",
+    "google/apiclient": "^2.0",
+    "zendframework/zendframework": "^3.0"
+  },
+  "autoload": {
+    "classmap": [
+      "public/",
+      "includes/",
+      "admin/"
+    ]
+  }
+}

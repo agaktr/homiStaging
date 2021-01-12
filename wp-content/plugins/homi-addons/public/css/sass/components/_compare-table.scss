@@ -1,0 +1,50 @@
+.compare-table {
+  background-color: #fff;
+  box-shadow: 0 2px 9px 0 rgba(26,26,26,0.44);
+
+  .fa-check, .color-green {
+    color:#27b06f;
+  }
+
+  .fa-times, .color-red {
+    color:#f37b7a;
+  }
+
+  td, th {
+    padding:10px 20px;
+  }
+
+  .heading-row td, thead tr th {
+    font-weight: 700;
+    padding: 20px!important;
+    color: #0b4d9d;
+    background-color: #d5e3f9;
+  }
+
+  tr {
+
+    td:not(:first-child),
+    th:not(:first-child){
+      text-align: center;
+    }
+
+  }
+
+  td:not(:first-child) .help-tip {
+    margin-left: -28px;
+    margin-right: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+  body {
+
+    .compare-table {
+      font-size:14px!important;
+    }
+
+  }
+
+}

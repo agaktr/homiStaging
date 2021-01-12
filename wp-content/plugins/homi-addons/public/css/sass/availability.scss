@@ -1,0 +1,434 @@
+#sellerAvailability {
+  padding: 40px 0 0;
+
+  .card {
+    border-radius:4px;
+  }
+}
+
+.card.availability-instructions {
+  border-radius: 4px;
+  padding: 25px;
+  margin: 25px 0;
+  background-color: #0b4d9d;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.calendar-content {
+  display: inline-block;
+  width: 100%;
+
+  h3 {
+    text-align: center;
+    font-weight: 700;
+  }
+
+}
+
+#save_availability,
+#delete_availability,
+{
+  color: #fff;
+  transition: 0.2s ease-in;
+  background-color: #1259af;
+  border: 0;
+  box-shadow: none;
+  height: 45px;
+  padding: 0 35px;
+  margin-top: 5px;
+  text-shadow: none;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+#save_availability:hover,
+#save_availability:focus,
+#save_availability:active,
+#delete_availability:hover,
+#delete_availability:focus,
+#delete_availability:active
+{
+  background-color: #0d4891;
+}
+
+#save_availability {
+  float: left;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 0;
+  width: 100%;
+  height: 55px;
+}
+
+
+.db-availability .card {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  background-color: #fff;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.db-availability .month-date {
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 14px;
+}
+
+
+.db-availability .monthly-availability {
+  padding: 15px 10px;
+  margin: 15px 0 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.monthly-availability:last-child {
+  border: 0;
+}
+
+.day-name {
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  display: inline-block;
+  line-height: 30px;
+  font-weight: 700;
+  color:  #1259af;
+  background-color:  #eee;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in;
+  font-size: 12px;
+}
+
+.db-availability .monthly-availability .day-item:hover .day-name,
+.day-name:hover,
+.day-name:focus,
+.day-name:active
+{
+  color: #fff;
+  background-color:  #1259af;
+}
+
+.day-item {
+  margin-top: 10px;
+}
+
+.day-times .timeslots__slot {
+  cursor: text;
+  width: 50px;
+  margin-bottom: 0;
+  font-size: 13px;
+  margin-right: 2px;
+  padding: 6px 0;
+  background-color: #e5e5e5;
+  color:  #1259af;
+  border-color: #e5e5e5;
+}
+
+.valuation_request_page_ValuationCalendar #wpcontent {
+  padding: 30px;
+}
+
+.valuation_request_page_ValuationCalendar #wpcontent h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #1259af;
+}
+
+.timeslots__slot input {
+  display: none;
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .flex.availability-wrapper {
+    float: left;
+    width: 40%;
+  }
+
+  .calendar-wrapper {
+    width:100%;
+    margin-right: 0!important;
+  }
+
+  .pignose-calendar {
+    max-width: 100%;
+  }
+
+  .time-wrapper {
+    width: 100%;
+  }
+
+}
+
+.timeslots__slot.new-slot {
+  color: #4CAF50;
+  font-weight: 700;
+}
+
+.db-availability .card {
+  padding: 20px;
+  margin: 4px 0;
+}
+
+.db-availability .monthly-availability .day-times {
+  display: inline-block;
+  width: calc(100% - 35px);
+}
+
+.db-availability .monthly-availability .day-item {
+  width: 100% !important;
+  display: flex;
+  max-width: 100% !important;
+  text-align: left;
+  margin: 0 0 5px;
+  font-size: 14px;
+  align-items: center;
+  border-radius: 0;
+  height: auto;
+  line-height: 35px;
+  background-color: transparent;
+}
+
+
+.db-availability h4 {
+  margin-bottom: 0;
+}
+
+.calender {
+  margin-bottom: 25px;
+}
+
+.timeslots__slot.booked {
+  background-color: #1259af;
+  color: #fff;
+  border-color: #1259af;
+}
+
+.timeslots__slot.selected.booked {
+  background-color: #4CAF50;
+  color: #fff;
+  border-color: #4CAF50;
+  cursor: not-allowed;
+  font-weight: 700;
+}
+
+.legend.availability-legend {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.legend.availability-legend .legend-item::before {
+  border: 2px solid #e1e1e1;
+  background: #e5e5e5;
+}
+
+.legend.availability-legend .legend-item.available::before {
+  border: 2px solid #1259af;
+  background: #1259af;
+}
+
+.time-wrapper {
+
+  .user-selected-date {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+
+  .selected-date-wrapper {
+    font-weight: 700;
+    border-bottom: 2px solid #0b4d9d;
+    padding-bottom: 10px;
+    color: #0b4d9d;
+  }
+
+  button {
+    width: calc(50% - 10px);
+    margin: 15px auto;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #0b4d9d;
+    box-shadow: none;
+    color: #0b4d9d;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.2s ease-in;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #0b4d9d;
+      color:#fff;
+    }
+
+  }
+}
+
+
+body .pignose-calendar .pignose-calendar-top .pignose-calendar-top-nav .pignose-calendar-top-icon {
+  background-color: #a9c8f9;
+  width: 40px;
+  height: 40px;
+  margin-top: -8px;
+  border-radius: 50%;
+  color: #1259af;
+  position: relative;
+  text-indent: unset;
+}
+
+.pignose-calendar .icon-arrow-right::before {
+  content: '>';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  display: block;
+  opacity: 1;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.pignose-calendar .icon-arrow-left::before {
+  content: '<';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  display: block;
+  opacity: 1;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+body {
+  .pignose-calendar .pignose-calendar-top .pignose-calendar-top-year {
+    display:block;
+  }
+}
+
+
+
+body {
+
+  .pignose-calendar .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-sun a,
+  .pignose-calendar .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-sat a {
+    color: #1259af;
+  }
+
+  .pignose-calendar .pignose-calendar-header .pignose-calendar-week.pignose-calendar-week-sun,
+  .pignose-calendar .pignose-calendar-header .pignose-calendar-week.pignose-calendar-week-sat {
+    color:initial;
+  }
+
+  .pignose-calendar-unit.pignose-calendar-unit-date.pignose-calendar-unit-disabled.pignose-calendar-unit-disabled-range.pignose-calendar-unit-disabled-multiple-range {
+    opacity: 0.4;
+    cursor: not-allowed;
+    a {
+      pointer-events: none;
+      font-weight: 400;
+    }
+
+  }
+
+}
+
+.mobile-actions {
+  background-color: #1259af;
+  z-index: 9999;
+  padding: 10px;
+  box-shadow: 0px -1px 2px #888;
+  display:none;
+
+  a {
+    color: #fff!important;
+    width: 50%;
+
+    i {
+      font-size:19px;
+    }
+
+    div {
+      font-size: 14px;
+      color: #a9c8f9;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+
+  .property-availability {
+    padding: 20px 15px;
+    .col.s12 {
+      padding:0!important;
+    }
+
+    .time-wrapper button {
+      font-size:13px;
+    }
+
+    .timeslots__slot {
+      font-size:13px;
+    }
+
+  }
+
+  .pignose-calendar .pignose-calendar-header .pignose-calendar-week {
+    font-size:12px;
+  }
+
+  .pignose-calendar .pignose-calendar-header,
+  .pignose-calendar .pignose-calendar-body {
+    padding: 0 5px;
+  }
+
+  .availability-content {
+    margin-top: 10px !important;
+  }
+
+
+  .card.availability-instructions {
+    font-size:14px;
+  }
+
+  .db-availability {
+
+    h3 {
+      text-align: center;
+      font-weight: 700;
+    }
+
+  }
+
+  .legend-item {
+    margin: 3px;
+  }
+
+  .mobile-actions {
+    display: block;
+  }
+
+}
+
+

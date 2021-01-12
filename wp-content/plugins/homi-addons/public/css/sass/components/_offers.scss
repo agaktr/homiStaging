@@ -1,0 +1,466 @@
+.page-template-page-landlord, .page-template-page-sell-your-property, .page-template-sell-premium, .page-template-rent-premium{
+
+  #section-body {
+    padding-bottom: 0;
+
+    > .container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+}
+
+#findTenant {
+  color: #fff;
+}
+
+.tenant-opener {
+  background-color: #0966d7 !important;
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    z-index: 0;
+    background-position: center;
+  }
+
+  svg {
+    position: absolute;
+    height: auto;
+    top: -166%;
+    left: 0;
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: #003575;
+    text-transform: uppercase;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #c5e4ff;
+
+    span {
+      font-size: 66px;
+      color: #fff;
+      margin-left: 10px;
+      position: relative;
+
+      &::before {
+        content:'';
+        position:absolute;
+        display: block;
+        background-color:#86d7ff;
+        bottom:-8px;
+        left:0;
+        width:100%;
+        height: 8px;
+      }
+
+    }
+
+  }
+
+}
+
+.page-template-page-sell-your-property {
+
+  .tenant-opener {
+
+    &::before {
+      opacity: 0.55;
+    }
+
+  }
+
+}
+
+.book-btn {
+  background-color: #2577dc;
+  color: #fff;
+  padding: 20px 25px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 30px auto 0;
+  font-weight:700;
+  transition: 0.2s ease-in;
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: #1259af;
+    color:#fff;
+  }
+
+}
+
+.homi-rent-plans {
+
+  svg {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: auto;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+  }
+
+}
+
+.rent-plan {
+  background-color: #003575;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 9px 0 rgba(26,26,26,0.44);
+  width: 500px;
+  margin: 0 auto;
+  max-width: 100%;
+
+  .plan-header {
+    padding: 30px;
+
+    .icon {
+      width: 80px;
+      margin: 0 auto 15px;
+      padding: 15px;
+      border-radius: 50%;
+      background-color: #003575;
+    }
+
+  }
+
+  .plan-header--title {
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .plan-header--price {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 32px;
+  }
+
+  .note {
+    color: #b4d6ff;
+  }
+
+  .plan-benefits {
+    padding: 25px;
+
+    ul {
+
+      li {
+        list-style: none;
+        padding: 8px 0;
+        text-align: left;
+
+        &.not-included {
+          color: #8cbbf3;
+        }
+
+        i {
+          margin-right: 10px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &#premium {
+    background-color: #fff;
+    color: #003575;
+    border: 3px solid #59b7ff;
+
+    .plan-header {
+      background-color: #003575;
+      color:#fff;
+
+      .icon  {
+        background-color: #59b7ff;
+      }
+
+    }
+
+    .plan-header--price {
+      color: #59b7ff;
+    }
+
+    .book-btn {
+      background-color: #003575;
+      color: #59b7ff;
+      box-shadow: 0 2px 9px 0 rgba(26,26,26,0.44);
+
+      &:hover,
+      &:focus,
+      &:active
+      {
+        background-color: #59b7ff;
+        color: #003575;
+      }
+
+    }
+
+  }
+
+
+  &#standard {
+    background-color: #edf4ff;
+    color: #003575;
+
+    .plan-header {
+      background-color: #fff;
+      color:#003575;
+    }
+
+    .note {
+      color: #003575;
+    }
+
+    .book-btn {
+      background-color: #fff;
+      color: #003575;
+      border: 1px solid;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #063f84;
+        color: #86d7ff;
+      }
+
+    }
+
+  }
+
+}
+
+
+.color-light-blue {
+  color:#86d7ff;
+}
+.color-light-red {
+  color:#fb6e6e;
+}
+
+.features-link {
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+/* The icon */
+.help-tip {
+  position: relative;
+  text-align: center;
+  border: 2px solid #003575;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 17px;
+  cursor: default;
+  display: inline-block;
+  margin-left: 5px;
+  transform: translateY(-1px);
+}
+
+.help-tip::before {
+  content: 'i';
+  font-weight: 700;
+  color: #003575;
+}
+
+.help-tip:hover,
+.help-tip:focus,
+.help-tip:active
+{
+
+  z-index:1;
+
+  p{
+    display:block;
+    transform-origin: 100% 0;
+    -webkit-animation: fadeIn 0.3s ease;
+    animation: fadeIn 0.3s ease;
+  }
+
+}
+
+
+/* The tooltip */
+.help-tip p {
+  display: none;
+  font-family: sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  background-color: #003575;
+  padding: 12px 16px;
+  width: 178px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  border-radius: 3px;
+  /* 	border: 1px solid #E0E0E0; */
+  box-shadow: 0 2px 9px 0 rgba(126,136,172,0.44);
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  z-index: 99;
+}
+
+
+/* The pointer of the tooltip */
+.help-tip p:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color:#003575;
+  top: -9px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Prevents the tooltip from being hidden */
+.help-tip p:after {
+  width: 10px;
+  height: 40px;
+  content:'';
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+
+/* CSS animation */
+@-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:100%; }
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:100%; }
+}
+
+
+#promoPremium {
+  color: #003575;
+  border-top: 1px solid #d6dde8;
+  padding-top: 30px;
+
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+  }
+
+  a {
+    background-color: #003575;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+  }
+
+}
+
+.separator-list {
+  color: #000 !important;
+  font-weight: 700;
+  border-top: 1px solid #c7d4e8;
+  margin-top: 20px;
+  padding-top: 20px !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  #standard {
+    margin-top:30px;
+  }
+
+  .tenant-opener {
+    padding: 60px 0;
+    text-align: center;
+
+    &::before {
+      opacity: 0.35;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #fff;
+      line-height: 45px;
+    }
+
+    h2 {
+      font-size: 36px;
+
+      span {
+        font-size: 50px;
+      }
+
+    }
+
+  }
+
+  .homi-rent-plans {
+    overflow:visible!important;
+  }
+
+  .rent-plan .plan-benefits ul li {
+    font-size: 14px;
+
+    i {
+      margin-right:2px;
+    }
+
+  }
+
+  .help-tip p {
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+
+
+  .selling-packages-opener p {
+
+    font-size: 1.4rem;
+
+  }
+
+}
+
+

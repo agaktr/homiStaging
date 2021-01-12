@@ -1,0 +1,3 @@
+# Project exclude paths
+/wp-content/plugins/homi-addons/node_modules/
+wp-config.php

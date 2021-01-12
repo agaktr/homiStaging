@@ -1,0 +1,9 @@
+.input-field.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  input, label {
+    pointer-events: none;
+  }
+
+}

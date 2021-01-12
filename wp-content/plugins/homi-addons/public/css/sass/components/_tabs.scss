@@ -1,0 +1,115 @@
+
+// variables
+$num-of-tabs: 4;
+$tabs-header-width: 100% / $num-of-tabs;
+
+@mixin tabs {
+  @for $i from 1 through $num-of-tabs {
+    &:nth-of-type(#{$i}) {
+      &.swiper-pagination-bullet-active {
+        ~ .active-mark {
+          left: $tabs-header-width * ($i - 1);
+        }
+      }
+    }
+  }
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  opacity:1;
+}
+
+.swiper-slide {
+  color: #333;
+  padding: 50px 0 30px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.swiper-container-horizontal {
+  > .swiper-pagination {
+    top: 0;
+
+    .swiper-pagination-bullet {
+      margin: 0;
+    }
+  }
+}
+
+.active-mark {
+  background: #026afb;
+  width: $tabs-header-width;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  transition: left 0.2s ease-out;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #0b4d9d;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
+  opacity: 1;
+  height: 56px;
+  width: 25%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 4px solid #a2c0e8;
+  max-width: 286px;
+
+  &:hover, &:focus, &:active {
+    color: #026afb;
+  }
+
+  @include tabs;
+  &:first-of-type {
+    &.swiper-pagination-bullet-active {
+      ~ .active-mark {
+        left: 0;
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  font-weight: bold;
+  color: #026afb;
+}
+
+body {
+  .swiper-pagination {
+    z-index:1;
+    width:100%;
+  }
+
+  .swiper-wrapper {
+    margin-top: 52px;
+  }
+
+}
+
+@media screen and (max-width: 666px) {
+
+
+  .swiper-pagination-bullet {
+    font-size: 14px;
+    align-items: start;
+  }
+
+}
+

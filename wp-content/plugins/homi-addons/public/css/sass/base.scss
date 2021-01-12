@@ -1,0 +1,42 @@
+@import "apto/generic";
+@import "apto/layout";
+@import "apto/normalize";
+@import "apto/mixins";
+@import "components/viewing-request";
+@import "components/tenant-item";
+@import "components/compare-table";
+@import "components/upload_form";
+@import "components/property";
+@import "components/search";
+@import "components/my-valuations";
+@import "components/homi-cta-block";
+@import "sections/interactive-form";
+@import "sections/contract";
+@import "components/offers";
+@import "components/reviews";
+
+body {
+  background-color: #e1ecfd!important;
+}
+
+.btn-primary {
+
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0;
+  height: 45px;
+  padding: 0 30px;
+  box-shadow: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: #1259af;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+
+  &.disabled {
+    background-color: #e1ecfd !important;
+    color: #7c889b !important;
+    cursor: not-allowed;
+  }
+
+}

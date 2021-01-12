@@ -1,0 +1,24 @@
+.profile-detail-block {
+  display: none;
+
+  .profile-contact {
+    display:none;
+  }
+
+}
+
+
+body {
+  #hospitals .icon, #libraries .icon, #pharmacies .icon, #schools .icon, #supermarkets .icon, #transportation .icon {
+    display: none!important;
+  }
+}
+
+body.homi-user-buyer {
+
+  .board-panel-menu li:nth-child(4) {
+    display: none;
+  }
+
+}
+

@@ -1,0 +1,155 @@
+@import "components/tabs";
+@import "components/benefits-carousel";
+
+.page-template-homepage {
+
+  #section-body {
+    padding-bottom:0;
+
+    & > .container {
+      width:100%;
+      max-width:100%;
+    }
+
+  }
+
+}
+
+#wantToSection {
+  background: linear-gradient(to right, #e1ecfd, #bbd8ff);
+}
+
+.txt-blue-2 {
+  color:#026afb;
+}
+
+.homi-section-paragraph {
+  font-size: 18px;
+}
+
+#homiLandingPage {
+  margin-bottom: 0;
+}
+
+#homiLandingPage section {
+  position:relative;
+}
+
+#homiLandingPage #intro::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: radial-gradient(ellipse closest-side, rgba(18, 89, 175, 0.39), #8baed8), url(https://homi.com.gr/wp-content/uploads/2020/03/AdobeStock_64903025-scaled.jpg);
+  background-size: cover;
+  opacity: 0.6;
+}
+
+#homiLandingPage #intro .col {
+  position:relative;
+  z-index:1;
+}
+
+#intro {
+  background: linear-gradient(to right, #1259af, #fff);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 0;
+}
+
+#intro .col svg {
+  margin-bottom: -6px;
+}
+
+#homiLandingPage #intro .col.col-text {
+  padding-left: 20%;
+}
+
+#homiLandingPage #intro::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(ellipse closest-side, rgba(18, 89, 175, 0.39), #8baed8), url(https://homi.com.gr/wp-content/uploads/2020/03/AdobeStock_64903025-scaled.jpg);
+  background-size: cover;
+  opacity: 0.6;
+  background-position: 20% 20%;
+}
+
+#intro {
+
+  h1 {
+    color: #0b4d9d;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-top: 25px !important;
+    line-height: 28px;
+  }
+
+}
+
+#socialSection {
+  padding: 50px 0;
+  background-color: #d0e1fb
+}
+
+@media screen and (max-width: 666px) {
+
+  #homiLandingPage {
+
+    p {
+      font-size: 14px;
+    }
+
+  }
+
+  #homiLandingPage #intro {
+    display: block;
+    padding: 40px 10px;
+    width: 100%;
+
+    .col.col-text {
+      padding: 0 5%;
+    }
+
+    .btns-wrapper a {
+      width: 100%;
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    .decor {
+      display:none;
+    }
+
+     h1, h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size:20px;
+    }
+
+  }
+
+  #wantToSection {
+    padding-bottom: 0 !important;
+  }
+
+}

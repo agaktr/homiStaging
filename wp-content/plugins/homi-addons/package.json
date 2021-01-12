@@ -1,0 +1,34 @@
+{
+  "name": "uhc",
+  "version": "1.0.0",
+  "description": "Homi Addons Plugin by aptooe",
+  "scripts": {
+    "watch": "node-sass --watch public/css/public.scss public/css/public.css",
+    "watch minify": "node-sass --watch public/css/public.scss public/css/public.css --output-style compressed",
+    "compile": "node-sass public/css/public.scss public/css/public.css",
+    "minify": "node-sass public/css/public.scss public/css/public.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giannisrig/homi-addons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giannisrig/homi-addons/issues"
+  },
+  "homepage": "https://github.com/giannisrig/homi-addons#readme",
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^1.11.0",
+    "onchange": "^6.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0"
+  }
+}

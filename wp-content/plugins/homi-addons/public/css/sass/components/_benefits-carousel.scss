@@ -1,0 +1,82 @@
+.benefits-carousel.owl-carousel {
+
+  .owl-stage {
+    display:flex;
+
+    > .owl-item > .col.s12 {
+      height:calc(100% - 20px);
+    }
+
+  }
+
+  .owl-stage-outer {
+    width:100%;
+
+    .card.benefit-item {
+      margin: 20px auto 15px;
+    }
+
+  }
+
+  .owl-nav {
+
+    .owl-prev, .owl-next {
+      font-size: 30px;
+      background-color: #0b4d9d;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      top: 50%;
+
+      &:hover, &:focus, &:active {
+        background-color: rgb(18, 89, 182);
+        border-color:rgb(18, 89, 175);
+      }
+
+    }
+
+    .owl-prev {
+      left: -1px;
+    }
+    .owl-next {
+      right:-1px;
+    }
+
+  }
+
+  .owl-dots {
+
+    .owl-dot span {
+      width: 20px;
+      height: 8px;
+      margin: 0 5px;
+      background-color: #a2c0e8;
+      transition:0.2s ease-in;
+    }
+
+    .owl-dot.active span, .owl-dot:hover span {
+      background: #026afb;
+      border: 0 !important;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 666px) {
+
+  .benefits-carousel.owl-carousel {
+    .owl-nav {
+
+      .owl-prev, .owl-next {
+        font-size: 25px;
+        background-color: #0b4d9d;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        top: 40%;
+      }
+    }
+  }
+
+}

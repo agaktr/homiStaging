@@ -1,0 +1,362 @@
+.single-property {
+
+  .header-detail {
+
+    .property-address {
+      color: #0b4d9d;
+      margin: 5px 0 0 !important;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .label-wrap .label {
+      background-color: #0b4d9d;
+      padding: 12px 15px;
+      margin-top: -4px;
+      margin-left: 15px;
+      box-shadow: 0 2px 9px 0 rgba(126,136,172,0.44);
+    }
+
+  }
+
+  #gallery .detail-slider-wrap{
+    min-height: 500px !important;
+    background-color: #fff;
+    background-image: url('https://i.pinimg.com/originals/59/32/f5/5932f52b7833e9e32f88a6c704ec754f.gif');
+    background-size:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .detail-title {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c2d0e6;
+
+    .title-left {
+      color: #0b4d9d;
+    }
+
+  }
+
+  .title-right a {
+    background-color: #e1ecfd;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .detail-slider-wrap, .detail-block, .sidebar-white .widget {
+    -webkit-box-shadow: 0 2px 9px 0 rgba(126, 136, 172, 0.44);
+    box-shadow: 0 2px 9px 0 rgba(126, 136, 172, 0.44);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .detail-block, .sidebar-white .widget {
+    padding:30px;
+  }
+
+  .video-block {
+    min-height: 350px;
+  }
+
+  .detail-block .alert-info {
+    color: rgba(0,0,0,.85);
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-three-col li {
+    font-size: 15px;
+
+    i {
+      color: #0b4d9d;
+    }
+
+  }
+
+  .homi-details-list {
+    li {
+      width: 33.3%;
+      display: inline-block;
+
+      i {
+        margin: 0 5px;
+      }
+
+      strong {
+        color:#0b4d9d;
+      }
+
+      &.yes-value-field strong {
+        color: #1259af;
+      }
+
+      &.no-value-field,
+      &.empty-field
+      {
+        color:#8a8e95;
+
+        strong {
+          color:#8a8e95;
+        }
+
+      }
+
+
+
+    }
+
+  }
+
+
+  .homi-detail-section h2 {
+    color: #1259af;
+  }
+
+  .homi-key-detail {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-bottom: 25px;
+  }
+
+  .stats-block {
+    width: calc(33.3% - 20px);
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 2px 9px 0 rgba(126,136,172,0.44);
+    margin: 10px 10px 15px;
+    padding: 15px 0;
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      display: block;
+      margin: 0 auto 10px;
+      background-color: #e1ecfd;
+      padding: 15px;
+      border-radius: 50%;
+
+      svg {
+        width:100%;
+        height:auto;
+
+        path {
+          fill:#1259af;
+        }
+
+      }
+
+    }
+
+    .value {
+      font-weight: 700;
+      color: #1259af;
+      font-size: 15px;
+    }
+
+    .label {
+      color: #515966;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .single-property {
+    background-color: #fff !important;
+
+    #gallery .detail-slider-wrap  {
+      min-height: 100px !important;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .detail-media.detail-content-slideshow {
+      border-bottom: 1px solid #c2d0e6;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+    }
+
+    .header-detail {
+      padding-top: 25px;
+      padding-bottom: 0;
+      text-align: center;
+
+      .header-left {
+        max-width: 100%;
+        width: 100%;
+
+        .table-list, .table-list .table-cell {
+          display: block !important;
+          width: 100%;
+          text-align: center;
+
+        }
+
+        .table-cell.hidden-sm.hidden-xs {
+          display:none!important;
+        }
+
+        .property-address, h1 {
+          overflow: visible;
+          width: 100%;
+          white-space: nowrap;
+          text-overflow: initial;
+        }
+
+        h1 {
+          font-size:17px;
+        }
+
+        .property-address {
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+      }
+
+      .header-right  {
+        float: left;
+        margin-top: 15px;
+        width: 100%;
+      }
+
+      .item-price {
+        background-color: #1259af;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 15px;
+        border-radius: 2px;
+        margin: 0 auto;
+        display: block;
+        max-width: 80px;
+        text-align: center;
+      }
+
+    }
+
+    .detail-media .label-wrap {
+
+    }
+
+    .media-tabs-list li > a, .media-tabs .actions li {
+      color: #1259af;
+      background-color: rgb(225, 236, 253)!important;
+      box-shadow: 0 2px 9px 0 rgba(126,136,172,0.44);
+
+      & > span {
+        background-color: inherit;
+        opacity: 1;
+      }
+
+    }
+
+    .label-wrap .label {
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    .stats-block {
+      width: calc(33% - 10px);
+      margin: 5px;
+      box-shadow: none;
+      border: 1px solid #c2d0e6;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        padding: 11px;
+      }
+
+      .value {
+        font-size: 13px;
+      }
+
+      .label {
+        color: #515966;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 2px;
+        display: block;
+      }
+
+    }
+
+    .detail-block {
+      padding: 0;
+      box-shadow: none;
+    }
+
+    .detail-title  {
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .homi-details-list li {
+      width: 50%;
+      display: inline-block;
+      margin: 0 0 8px;
+      font-size: 13px;
+
+      i {
+        margin: 0;
+        display: none;
+      }
+
+    }
+
+    .list-three-col li {
+      font-size: 13px;
+      width: 50%;
+      display: inline-block;
+    }
+
+    #address {
+      margin-top: 30px;
+
+      .list-three-col li {
+        width:100%;
+      }
+
+    }
+
+    .title-right a {
+      background-color: transparent;
+      padding: 0;
+      font-size: 13px;
+      font-weight: 400;
+      color: #4c5a71;
+    }
+
+    #description p {
+      font-size: 15px;
+      line-height: 135%;
+    }
+
+
+  }
+
+}
+
+#myProperties {
+  .property-item a {
+    background-color: #0b4d9d;
+    color: #fff;
+    padding: 10px 12px;
+    margin-right: 10px;
+    margin-top: auto;
+    font-size: 14px; 
+    border-radius: 2px;
+  }
+
+}

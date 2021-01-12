@@ -1,0 +1,160 @@
+@import "global/variables";
+
+#afterRequestPage {
+
+  .with-line {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-color: #02bdff;
+      left: calc(50% - 1px);
+      top: -20px;
+      height: calc(100% + 40px);
+      width: 3px;
+      z-index: -1;
+    }
+
+  }
+
+}
+
+.page-template-page-after-request, .page-template-page-after-schedule-tour {
+    background-color: #0966d7!important;
+
+  .pricing-col.seller-col {
+    margin-top: 0;
+    border-radius: 2px;
+  }
+
+  .card.request-item {
+    margin-top: 0;
+    border-radius: 2px;
+    box-shadow: 0 2px 19px 0 rgba(45,45,45,0.54);
+
+    .request-meta {
+      margin-bottom: 5px;
+
+      span {
+        text-align: right;
+        float: right;
+      }
+
+    }
+
+    .req-date, .req-time {
+      background-color: #e1ecfd;
+    }
+
+  }
+
+}
+
+.homi-request-message {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 25px;
+  box-shadow: 0 2px 19px 0 rgba(45,45,45,0.54);
+
+  .thank-you-message {
+    width: calc(100% - 100px);
+    display: inline-block;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: $homi-primary-color;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .side-vector {
+    width:80px;
+    height:auto;
+    margin-right: 15px;
+  }
+
+  .big-vector {
+    width: 195px;
+    margin: 0 auto;
+  }
+
+  a {
+    font-weight: 700;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #e1ecfd;
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+
+}
+
+.request-info {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+
+  svg {
+    width: 30px;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+  .request-label {
+    color: $homi-primary-color;
+    background-color: #e1ecfd;
+    margin: 0 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+}
+
+.homi-panel {
+  border-radius: 2px;
+  padding: 25px;
+  box-shadow: 0 2px 19px 0 rgba(45,45,45,0.54);
+
+  .homi-panel--heading {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    .heading--icon {
+
+      display: inline-block;
+      width: 35px;
+      margin-right: 15px;
+
+    }
+
+    h3 {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .input-field input {
+    background-color: #e1ecfd;
+    border: 2px solid #e1ecfd;
+
+    &:hover, &:focus, &:active {
+      border: 2px solid $homi-primary-color;
+    }
+
+  }
+
+}

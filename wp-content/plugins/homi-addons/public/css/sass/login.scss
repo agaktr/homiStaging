@@ -1,0 +1,279 @@
+@import "global/variables";
+
+.page-template-page-login {
+  background-color: #0966d7;
+
+  #section-body .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .curved-divider {
+    position: absolute;
+    top: -100px;
+    z-index: 0;
+    width: 100%;
+    left: 0;
+  }
+
+}
+
+.login-card.card {
+  display: inline-block;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 25px 5%;
+  max-width: 100%;
+  box-shadow: 0 2px 19px 0 rgba(45,45,45,0.54);
+
+  .brand-logo {
+    width: 150px;
+    margin: 10px auto 25px;
+  }
+
+  h1 {
+    margin-bottom: 5px;
+  }
+
+  form {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .input-field {
+    margin-bottom: 20px;
+
+    label {
+      text-align:left;
+    }
+
+    input {
+      background-color: #e1ecfd;
+      border: 2px solid #e1ecfd;
+
+      &:hover, &:focus, &:active {
+        border: 2px solid $homi-primary-color;
+      }
+
+    }
+
+  }
+
+  .login-extra-links p {
+    margin-bottom: 5px;
+  }
+
+  .recaptcha-field label {
+    pointer-events: none;
+    background-color: #e1ecfd;
+    margin-top: 15px;
+    padding: 10px 15px;
+    color: #0b4d9d;
+    font-weight: 700;
+
+    .running {
+      -webkit-animation: flash linear 1s infinite;
+      animation: flash linear 1s infinite;
+
+
+      &:after {
+        content: ' . . .';
+        animation: dots 1s steps(5, end) infinite;}
+
+      @keyframes dots {
+        0%, 20% {
+          color: rgba(0,0,0,0);
+          text-shadow:
+                  .25em 0 0 rgba(0,0,0,0),
+                  .5em 0 0 rgba(0,0,0,0);}
+        40% {
+          color: white;
+          text-shadow:
+                  .25em 0 0 rgba(0,0,0,0),
+                  .5em 0 0 rgba(0,0,0,0);}
+        60% {
+          text-shadow:
+                  .25em 0 0 white,
+                  .5em 0 0 rgba(0,0,0,0);}
+        80%, 100% {
+          text-shadow:
+                  .25em 0 0 white,
+                  .5em 0 0 white;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@-webkit-keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: .1; }
+  100% { opacity: 1; }
+}
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: .1; }
+  100% { opacity: 1; }
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.login-card.failed-login.card {
+  display: block;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  font-size: 14px;
+  background-color: #033879;
+  color: #fff;
+
+  a {
+    color: #4e9eff;
+    font-weight: 700;
+  }
+
+}
+
+.email-message {
+  text-align: left;
+  background-color: #1259af;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 2px;
+
+  a {
+    color:#9ecaff;
+  }
+
+}
+
+#email_available {
+  pointer-events: none;
+}
+
+.homi-mobile-login {
+  a {
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+
+    &:last-child {
+      margin-left: 15px;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 601px) {
+
+  .page-template-page-login {
+
+    .curved-divider {
+      display: none;
+    }
+
+    #homiLogin {
+      padding: 0 !important;
+
+      .col.s12 {
+        padding: 0 !important;
+      }
+
+      .login-card.card {
+        box-shadow: none;
+      }
+
+    }
+
+    #section-body {
+      padding-bottom: 0;
+    }
+
+  }
+
+  .page-template-page-homi-register {
+
+    #section-body {
+      padding-bottom: 0;
+
+      .container {
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+
+    }
+
+    #customAccountPage {
+      padding:0;
+    }
+
+    .card {
+      box-shadow: none;
+    }
+
+    .card.seller-card {
+      margin: 0;
+      padding-bottom: 30px;
+      border-top: 1px solid #e1ecfd;
+    }
+
+  }
+
+  body:not(.logged-in) {
+
+    .header-mobile > .container {
+      padding: 0!important;
+    }
+
+    .mobile-nav {
+      width: 15%;
+      text-align: center;
+      background-color: #12529f;
+    }
+
+    .header-logo {
+      width: 45%;
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    .header-mobile .header-user {
+      width: 40%;
+      text-align: right;
+      padding-right: 15px;
+    }
+
+    .homi-mobile-login a:last-child {
+      padding-left: 5px;
+    }
+
+    .homi-mobile-login a {
+      font-weight: 700;
+      color: #fff;
+      font-size: 12px;
+      display: inline-block;
+      margin: 0;
+
+      &:hover,
+      &:focus,
+      &:active{
+        color: #b0d1ff;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,93 @@
+.homi-cta-block {
+  box-shadow: 0 2px 9px 0 rgba(126,136,172,0.44);
+  padding: 20px;
+  background-color: #d6e6f9;
+  border: 2px solid #0b4d9d;
+
+  &.loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  h3 {
+    margin-top: 0 !important;
+    color: #0b4d9d;
+    font-weight: 700 !important;
+    font-size: 25px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .homi-btn {
+    background-color: #ec8c22 !important;
+    color: #fff !important;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px !important;
+    border-radius: 2px;
+    max-width: 100%;
+    box-shadow: none;
+    border: 0;
+  }
+
+  input {
+    background-color: #fff;
+    border: 2px solid #1259af;
+    margin-bottom: 10px;
+  }
+
+  .cta-message {
+    background-color: #12af83;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+
+    &.error-message {
+      background-color: #af122f;
+    }
+
+  }
+
+  .flex.checkbox-boxes {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .checkbox-with-vector {
+    width: calc(33.3% - 23px);
+    margin: 10px;
+    padding: 10px 5px;
+  }
+
+}
+
+.blog-article .article-detail .extra-fields p {
+  margin: 10px 0 !important;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .homi-cta-block {
+    padding: 20px 10px;
+
+    svg {
+      display: none;
+    }
+
+    h3 {
+      font-size:20px!important;
+    }
+
+    .homi-btn {
+      margin-right:0;
+      padding:10px!important;
+    }
+
+  }
+
+}
