@@ -1,0 +1,34 @@
+.homi-dashboard-page {
+
+  #header-section {
+    display: none;
+  }
+
+  #section-body {
+    padding-bottom:0;
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .dashboard-panel {
+    width: calc(100% - 250px);
+    position: relative;
+    margin: 0 0 0 250px !important;
+    min-height: 100vh;
+    padding: 0 3%;
+  }
+
+  &.admin-bar {
+    .dashboard-panel {
+      min-height: calc(100vh - 32px);
+    }
+  }
+
+  #footer-section {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+  }
+
+}

@@ -30,7 +30,7 @@ get_header();
 
             <div class="col l8 s12 col-text">
 
-                <h1>HOMI test3</h1>
+                <h1>HOMI</h1>
 
                 <h2>
                     The service you deserve with 0% commission.

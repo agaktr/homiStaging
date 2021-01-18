@@ -1,0 +1,46 @@
+//===========================================================================/
+//
+//    The purpose of this file is to define the color variables
+//    that will be used throughout the project components.
+//
+// ----------------------------------------------------------------------
+//
+//    You can use cool names for your colors by using this tool:
+//    https://chir.ag/projects/name-that-color
+//
+//==========================================================================/
+
+
+
+//============================================/
+//    Generic Default Colors
+//==========================================/
+$hospital-white: #fff;
+$black-metal: #000;
+$dove-gray: #666;
+$gallery: #eee;
+$mercury: #e5e5e5;
+
+
+//============================================/
+//    Color Palette of the Project
+//==========================================/
+$palette-color1: #0b4d9d;
+$palette-color2: #ec8c3f;
+$palette-color3: #e1ecfd;
+$palette-color4: #fba919;
+$palette-color5: #fdf2cc;
+
+
+//============================================/
+//    Components Colors
+//==========================================/
+
+
+//============================================/
+//    Dashboard
+//==========================================/
+$dashboardHeaderBg: $palette-color1;
+$dashboardHeaderTxtColor: $hospital-white;
+$dashboardHeaderLinkColor: $hospital-white;
+$dashboardHeaderLinkColorHover: $palette-color2;
